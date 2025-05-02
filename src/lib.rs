@@ -379,8 +379,8 @@ pub unsafe extern "C" fn ioctl(fd: RawFd, request: c_ulong, argp: *mut c_void) -
                 }
                 // Turing
                 0x1e02..=0x1ff9 | 0x2182..=0x21d1 => {
-                    // Quadro RTX 6000
-                    (0x1e30, 0x12ba)
+                    // Tesla T4
+                    (0x1eb8, 0x12a2)
                 }
                 // Ampere
                 0x2200..=0x2600 => {
